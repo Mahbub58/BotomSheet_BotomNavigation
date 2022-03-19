@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Collaps"
+            android:id="@+id/btn_cpllaps"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="expend"
+            android:id="@+id/btn_expnd"/>
+
+        <TextView
+            android:id="@+id/tv_stat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Stat"
+            android:textSize="30sp"
+            android:textColor="@android:color/black"/>
+
+
+    </LinearLayout>
+
+
+
+
+  <androidx.core.widget.NestedScrollView
+      android:id="@+id/booto_sheet"
+      android:layout_width="match_parent"
+      android:layout_height="350dp"
+      app:layout_behavior="@string/bottom_sheet_behavior"
+      app:behavior_hideable="false"
+      android:background="@android:color/holo_blue_light"
+      app:behavior_peekHeight="55dp">
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+      <TextView
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="16dp"
+          android:textColor="@android:color/white"
+          android:text="This is a Bottom_Sheet\n\na dummy text a dummy text a dummy text a dummy text a dummy text a dummy text"/>
+
+</RelativeLayout>
+
+  </androidx.core.widget.NestedScrollView>
+</com.google.android.material.circularreveal.coordinatorlayout.CircularRevealCoordinatorLayout>
